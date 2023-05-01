@@ -28,8 +28,16 @@ class MyApp extends StatelessWidget {
       ),
       home: CustomButton(
         chatMessage: const [
-          ChatBubble(sender: true, message: "Hi Lama"),
-          ChatBubble(sender: false, message: "Hi Yasso")
+          ChatBubble(
+            sender: true,
+            message: "Hi Lama",
+            time: "1-5-2020",
+          ),
+          ChatBubble(
+            sender: false,
+            message: "Hi Yasso",
+            time: '1-6-2032',
+          )
         ],
         name: "Lama",
         child: Container(),
@@ -37,4 +45,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
